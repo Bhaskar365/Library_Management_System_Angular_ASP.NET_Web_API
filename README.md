@@ -1,27 +1,24 @@
-# LibraryManagementProgram
+# Library Management Program
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.2.
+This project was built with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.2 , ASP.NET WEB API 6 version and SQL Server.
 
-## Development server
+## Instructions to replicate project
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1.) Clone the project in your local system. 
+2.) If you are using VS Code for Angular, go to root directory and press npm install in command terminal for the project to fetch all required dependencies and packages.
+3.) For the API, go to the appsettings.json file to change the SQL Data Source(Server) name which might be different for your configuration and Initial Catalog is Database name which you can choose as per your wish. 
+4.) Remove the existing migration folder from API Project. To initiate migrations, get the following Nuget packages first - 
+    i.) EntityFramework Core.
+    ii.) EntityFramework Sql Server.
+    iii.) EntityFramework Tools
 
-## Code scaffolding
+  Then in package manager terminal , start migrations by first command : **add-migration someName** followed by **update-database** command. If everything is Ok, you will get success message.
+    
+5.) Remember to run the API before you run the UI to avoid 404 errors.
+6.) ng serve will run program for Angular and for API, it would be either dotnet run or direct Run button in Visual Studio.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+**NOTE** - _Run the BookList SQL file content in SQL Server after migrations are done and tables are created._
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+If you need some help , text me in twitter.
