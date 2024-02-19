@@ -22,7 +22,3 @@ This project was built with [Angular CLI](https://github.com/angular/angular-cli
 6.) ng serve will run program for Angular and for API, it would be either dotnet run or direct Run button in Visual Studio.
 <br />
 **NOTE** - _Run the BookList SQL file content in SQL Server after migrations are done and tables are created._
-
-## Further help
-
-If you need some help , text me in twitter.
